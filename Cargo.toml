@@ -1,0 +1,30 @@
+[workspace]
+members = [
+"mini-ele-runner", "mini-ele-client", "mini-ele-lib",
+]
+resolver = "2"
+exclude = ["mini-ele-godot/"]
+
+
+[workspace.dependencies]
+fxhash = "0.2"
+chrono = "0.4"
+static_assertions = "1"
+ordered-float = "4"
+nalgebra = { version = "0.32", features = ["serde-serialize"] }
+toml = "0.8"
+serde = { version = "1", features = ["derive", "rc"] }
+crossbeam = "0.8"
+rand = { version = "0.8", features = ["small_rng"] }
+rand_distr = "0.4"
+bytemuck = { version = "1", features = [ "derive" ] }
+rayon = "1.10.0"
+parking_lot = "0.12.2"
+bincode = "1.3.3"
+spin_sleep = "1.2.0"
+
+[profile.dev.package.mini-ele-runner]
+opt-level = 3
+
+[profile.dev.package.mini-ele-client]
+opt-level = 3

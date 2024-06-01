@@ -1,0 +1,11 @@
+[package]
+name = "mini-ele-runner"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bytemuck = { workspace = true }
+mini-ele-lib = { path = "../mini-ele-lib" }
+bincode = { workspace = true }
+spin_sleep = { workspace = true }
+crossbeam = { workspace = true }

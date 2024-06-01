@@ -1,0 +1,11 @@
+[package]
+name = "mini-ele-client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mini-ele-lib = { path = "../mini-ele-lib" }
+crossbeam = { workspace = true }
+bincode = { workspace = true }
+bytemuck = { workspace = true }
+spin_sleep = { workspace = true }
